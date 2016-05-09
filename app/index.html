@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+
+<head>
+
+    <title>DT Customs</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Fonts & Icons-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+
+    <!--Materialize mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <ui-view></ui-view>
+
+
+    <!--Angular-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+    <!--Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <!--Controllers-->
+    <script src="components/login/login.controller.js"></script>
+    <script src="components/doctor/doctor.controller.js"></script>
+    <script src="components/billing/billing.controller.js"></script>
+
+    <!--Directives-->
+
+
+    <!--Services-->
+    <script src="components/login/login.service.js"></script>
+    <script src="components/doctor/doctor.service.js"></script>
+    <script src="components/billing/billing.service.js"></script>
+
+
+</body>
+
+</html>
