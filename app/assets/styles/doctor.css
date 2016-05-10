@@ -33,13 +33,13 @@ html {
     float: right;
     padding-top: 15px;
     padding-right: 15px;
-    font-size: 40px;
+    font-size: 200%;
 }
 
 .main-container {
     display: flex;
     padding: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .payment-entry {
@@ -55,3 +55,4 @@ html {
     background-color: red;
     border-radius: 5px;
 }
+
