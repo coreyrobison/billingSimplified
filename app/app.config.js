@@ -4,18 +4,22 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
 
         .state('login', {
             url: '/login',
-            templateUrl: 'components/login/loginView.html',
+            templateUrl: 'components/login/defaultLoginView.html',
             // controller: 'loginCtrl'
+        })
+        .state('login.billing', {
+            url: '/billing-login',
+            templateUrl: 'components/login/billingLoginView.html'
         })
 
         .state('doctorHomepage', {
-            url: '/doctorHomepage',
+            url: '/doctor-homepage',
             templateUrl: 'components/doctor/doctorView.html',
             // controller: 'doctorHomepageCtrl'
         })
 
         .state('billingHomepage', {
-            url: '/billingHomepage',
+            url: '/billing-homepage',
             templateUrl: 'components/billing/billingView.html',
             // controller: 'billingHomepageCtrl'
         })

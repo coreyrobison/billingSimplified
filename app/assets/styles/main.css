@@ -108,3 +108,19 @@ textarea {
   border: 0;
   padding:15px 0;
 }
+
+.doctor-toggle2 {
+  background-color: #1ab188;
+  width: 50%;
+  height: 60px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.billing-toggle2 {
+  background-color: #435159;
+  width: 50%;
+  height: 60px;
+  font-size: 20px;
+  padding-top: 20px;
+}
