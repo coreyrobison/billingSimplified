@@ -1,16 +1,29 @@
-<main class="form">
-    <header class="toggle-container">
-        <nav>
-            <ul class="toggle-buttons">
-                <li class="doctor-toggle">DOCTOR</li>
-                <li class="billing-toggle">BILLING</li>
-            </ul>
-        </nav>
-    </header>
-    <ui-view></ui-view>
-    <section>
-        <form action="">
-            <input type="text">
-        </form>
-    </section>
-</main>
+<body>
+    <main class="form">
+        <header class="toggle-container">
+            <nav>
+                <ul class="toggle-buttons">
+                    <li class="doctor-toggle">Practice Staff</li>
+                    <li class="billing-toggle">Simplified Staff</li>
+                </ul>
+            </nav>
+        </header>
+        <ui-view></ui-view>
+        <section>
+
+            <h1 style="color:white; text-align:center; font-size:50px;">Welcome Back!</h1>
+
+            <form class="login" method="post" action="index.html">
+                <p><input id="login-name" type="text" name="login" value="" placeholder="Username or Email"></p>
+                <p><input id="login-password" type="password" name="password" value="" placeholder="Password"></p>
+            </form>
+
+            <div class="login-help">
+                <p style="color:#1ab188">Forgot your password?</p>
+            </div>
+
+            <p><input id="login-submit" type="submit" name="commit" value="LOG IN"></p>
+
+        </section>
+    </main>
+</body>
