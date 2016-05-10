@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700italic,900,300);
+html {
+  box-sizing: border-box;
+  background: #C1BDBA;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*Doctor Homepage*/
+.container {
+    width: 75%;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.logo-bar {
+    background-color: gray;
+}
+
+#logo {
+    width: 30%;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.practice-name {
+    float: right;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 40px;
+}
+
+.main-container {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.payment-entry {
+    width: 60%;
+    height: 300px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.chat {
+    width: 35%;
+    height: 300px;
+    background-color: red;
+    border-radius: 5px;
+}

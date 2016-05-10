@@ -3,8 +3,8 @@
         <header class="toggle-container">
             <nav>
                 <ul class="toggle-buttons">
-                    <li class="doctor-toggle2">Practice Staff</li>
-                    <li class="billing-toggle2">Simplified Staff</li>
+                    <li class="doctor-toggle" ng-class="{selected:practice}" ng-click="practice=true">Practice Staff</li>
+                    <li class="billing-toggle" ng-class="{selected:!practice}" ng-click="practice=false">Simplified Staff</li>
                 </ul>
             </nav>
         </header>

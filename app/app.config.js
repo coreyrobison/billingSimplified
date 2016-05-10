@@ -4,12 +4,8 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
 
         .state('login', {
             url: '/login',
-            templateUrl: 'components/login/defaultLoginView.html',
+            templateUrl: 'components/login/loginView.html',
             // controller: 'loginCtrl'
-        })
-        .state('login.billing', {
-            url: '/billing-login',
-            templateUrl: 'components/login/billingLoginView.html'
         })
 
         .state('doctorHomepage', {
