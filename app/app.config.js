@@ -11,7 +11,7 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
         .state('doctorHomepage', {
             url: '/doctor-homepage',
             templateUrl: 'components/doctor/doctorView.html',
-            // controller: 'doctorHomepageCtrl'
+            // controller: 'doctorCtrl'
         })
 
         .state('billingHomepage', {

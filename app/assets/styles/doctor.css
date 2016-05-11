@@ -46,8 +46,7 @@ html {
 
 .payment-entry {
     width: 60%;
-    height: 300px;
-    background-color: blue;
+    background-color: #179B77;
     border-radius: 5px;
     padding: 20px;
 }
@@ -95,6 +94,7 @@ textarea {
 #payment-amount1 {
     width: 45%;
     float: left;
+    margin-top: 20px;
 }
 
 #payment-amount1,
@@ -110,9 +110,125 @@ textarea {
   transition: border-color .25s ease, box-shadow .25s ease;
 }
 
+#payment-amount2 {
+    width: 45%;
+    float: left;
+    margin-top: 20px;
+}
+
+#payment-amount2,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#payment-amount3 {
+    width: 45%;
+    float: left;
+    margin-top: 20px;
+}
+
+#payment-amount3,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.purpose-selector {
+    width: 45%;
+    float: right;
+    margin-top: 20px;
+}
+
+.purpose-selector,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: black;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#payment-total {
+    width: 45%;
+    float: left;
+    margin-top: 20px;
+}
+
+#payment-total,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: black;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#payment-method {
+    width: 45%;
+    float: right;
+    margin-top: 15px;
+}
+
+#payment-method,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: black;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#comments {
+    width: 100%;
+    float: right;
+    margin-top: 20px;
+}
+
+#comments,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: black;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+
+
 .chat {
     width: 35%;
-    height: 300px;
-    background-color: red;
+    height: 355px;
+    background-color: #179B77;
     border-radius: 5px;
-}}
+}
