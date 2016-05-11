@@ -1,16 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700italic,900,300);
 html {
-  box-sizing: border-box;
-  background: #C1BDBA;
+    box-sizing: border-box;
+    background: #C1BDBA;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
+
 /*Doctor Homepage*/
+
 .container {
     width: 75%;
     background-color: white;
@@ -47,6 +49,65 @@ html {
     height: 300px;
     background-color: blue;
     border-radius: 5px;
+    padding: 20px;
+}
+
+.payment-data {
+    width: 100%;
+}
+
+#last-name {
+    width: 45%;
+    float: left;
+}
+
+#last-name,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#first-name {
+    width: 45%;
+    float: right;
+}
+
+#first-name,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#payment-amount1 {
+    width: 45%;
+    float: left;
+}
+
+#payment-amount1,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 .chat {
@@ -54,5 +115,4 @@ html {
     height: 300px;
     background-color: red;
     border-radius: 5px;
-}
-
+}}
