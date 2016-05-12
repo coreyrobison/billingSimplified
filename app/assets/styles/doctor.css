@@ -45,7 +45,7 @@ html {
 }
 
 .payment-entry {
-    width: 60%;
+    width: 100%;
     background-color: #179B77;
     border-radius: 5px;
     padding: 20px;
@@ -217,7 +217,7 @@ textarea {
   padding: 5px 10px;
   background: none;
   border: 1px solid black;
-  color: black;
+  color: white;
   border-radius: 0;
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
@@ -241,7 +241,7 @@ textarea {
   padding: 5px 10px;
   background: none;
   border: 1px solid black;
-  color: black;
+  color: white;
   border-radius: 0;
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
@@ -291,9 +291,3 @@ textarea {
     outline: none;
 }
 
-.chat {
-    width: 35%;
-    height: 476px;
-    background-color: #179B77;
-    border-radius: 5px;
-}
