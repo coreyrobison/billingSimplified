@@ -4,23 +4,24 @@ angular.module('app').directive('chatDir', function () {
         restrict: 'E',
         templateUrl: 'shared/chat/chatView.html',
         link: function (scope, element, atts) {
-            (function () {
+            (
+                function () {
 
-                $('#live-chat header').on('click', function () {
+                    $('#live-chat header').on('click', function () {
 
-                    $('.chat').slideToggle(300, 'swing');
-                    $('.chat-message-counter').fadeToggle(300, 'swing');
+                        $('.chat').slideToggle(300, 'swing');
+                        $('.chat-message-counter').fadeToggle(300, 'swing');
 
-                });
+                    });
 
-                $('.chat-close').on('click', function (e) {
+                    $('.chat-close').on('click', function (e) {
 
-                    e.preventDefault();
-                    $('#live-chat').fadeOut(300);
+                        e.preventDefault();
+                        $('#live-chat').fadeOut(300);
 
-                });
+                    });
 
-            })();
+                })();
         }
     };
 });
