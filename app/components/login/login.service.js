@@ -1,3 +1,3 @@
-angular.module("app").service("loginService", function() {
-
+angular.module("app").service("loginService", function () {
+    
 });

@@ -173,19 +173,67 @@ textarea {
   transition: border-color .25s ease, box-shadow .25s ease;
 }
 
-.purpose-selector {
+.purpose-selector1 {
     width: 45%;
     float: right;
     margin-top: 20px;
 }
 
-.purpose-selector:focus {
+.purpose-selector2 {
+    width: 45%;
+    float: right;
+    margin-top: 20px;
+}
+
+.purpose-selector3 {
+    width: 45%;
+    float: right;
+    margin-top: 20px;
+}
+
+.purpose-selector1:focus {
+    outline: none;
+    border:1px solid white;
+}
+
+.purpose-selector2:focus {
+    outline: none;
+    border:1px solid white;
+}
+
+.purpose-selector3:focus {
     outline: none;
     border:1px solid white;
 }
 
 
-.purpose-selector,
+.purpose-selector1,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid black;
+  color: black;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.purpose-selector2,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid black;
+  color: black;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.purpose-selector3,
 textarea {
   font-size: 22px;
   display: block;
@@ -285,6 +333,7 @@ textarea {
 
 .submit-button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }
 
 .submit-button:focus {

@@ -8,14 +8,14 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
             // controller: 'loginCtrl'
         })
 
-        .state('doctorHomepage', {
-            url: '/doctor-homepage',
+        .state('doctor', {
+            url: '/doctor',
             templateUrl: 'components/doctor/doctorView.html',
-            // controller: 'doctorCtrl'
+            controller: 'doctorCtrl'
         })
 
-        .state('billingHomepage', {
-            url: '/billing-homepage',
+        .state('billing', {
+            url: '/billing',
             templateUrl: 'components/billing/billingView.html',
             // controller: 'billingHomepageCtrl'
         })
