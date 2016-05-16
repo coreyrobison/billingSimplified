@@ -18,47 +18,48 @@
                         <fieldset>
                             <legend style="font-size:50px; padding-bottom: 10px;">Payment Entry </legend>
 
-                            <p><input id="last-name" type="text" name="last-name" placeholder="Last Name" required></p>
+                            <select id="name" required>
+                                <option selected disabled>Choose a Patient</option>
+                                <option value="name">Stone, Sharon</option>
+                            </select>
 
-                            <p><input id="first-name" type="text" name="first-name" placeholder="First Name" required></p>
-
-                            <p><input id="payment-amount1" type="number" name="payment-amount" placeholder="Payment Amount" required></p>
+                            <input id="payment-amount1" type="number" name="payment-amount" placeholder="Payment Amount" required>
 
                             <select class="purpose-selector1" name="purpose" required>
                                 <option selected disabled>Select Purpose</option>
-                                <option value="Copay" selected>Copay</option>
+                                <option value="Copay">Copay</option>
                                 <option value="Deposit">Deposit</option>
                                 <option value="Bill Payment">Bill Payment</option>
                                 <option value="Other">Other</option>
                             </select>
 
-                            <p><input id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount"></p>
+                            <input id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount">
 
                             <select class="purpose-selector2" name="purpose">
                                 <option selected disabled>Select Purpose</option>
-                                <option value="Copay" selected>Copay</option>
+                                <option value="Copay">Copay</option>
                                 <option value="Deposit">Deposit</option>
                                 <option value="Bill Payment">Bill Payment</option>
                                 <option value="Other">Other</option>
                             </select>
 
-                            <p><input id="payment-amount3" type="number" name="payment-amount" placeholder="Payment Amount"></p>
+                            <input id="payment-amount3" type="number" name="payment-amount" placeholder="Payment Amount">
 
                             <select class="purpose-selector3" name="purpose">
                                 <option selected disabled>Select Purpose</option>
-                                <option value="Copay" selected>Copay</option>
+                                <option value="Copay">Copay</option>
                                 <option value="Deposit">Deposit</option>
                                 <option value="Bill Payment">Bill Payment</option>
                                 <option value="Other">Other</option>
                             </select>
 
-                            <p><input id="payment-total" type="number" name="payment-total" placeholder="Total Payment"></p>
+                            <input id="payment-total" type="number" name="payment-total" placeholder="Total Payment">
 
-                            <p><input id="payment-method" type="text" name="payment-total" placeholder="Payment Method"></p>
+                            <input id="payment-method" type="text" name="payment-total" placeholder="Payment Method">
 
 
 
-                            <p><input id="comments" type="text" name="comments" placeholder="Comments"></p>
+                            <input id="comments" type="text" name="comments" placeholder="Comments">
 
                         </fieldset>
 

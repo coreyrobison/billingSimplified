@@ -55,47 +55,28 @@ html {
     width: 100%;
 }
 
-#last-name {
-    width: 45%;
+#name {
+    width: 100%;
     float: left;
 }
 
-#last-name:focus {
+#name:hover {
+    cursor: pointer;
+}
+
+#name:focus {
     outline: none;
     border:1px solid white;
 }
 
-#last-name,
+#name,
 textarea {
   font-size: 22px;
   display: block;
   padding: 5px 10px;
   background: none;
   border: 1px solid black;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
-}
-
-#first-name {
-    width: 45%;
-    float: right;
-}
-
-#first-name:focus {
-    outline: none;
-    border:1px solid white;
-}
-
-#first-name,
-textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: #ffffff;
+  color: black;
   border-radius: 0;
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
@@ -206,6 +187,17 @@ textarea {
     border:1px solid white;
 }
 
+.purpose-selector1:hover {
+    cursor: pointer;
+}
+
+.purpose-selector2:hover {
+    cursor: pointer;
+}
+
+.purpose-selector3:hover {
+    cursor: pointer;
+}
 
 .purpose-selector1,
 textarea {
