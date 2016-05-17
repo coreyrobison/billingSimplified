@@ -1,4 +1,7 @@
-<body>
+
+    <section class="curtain" ng-show="patients">
+        
+    </section>
     <main class="container">
         <header>
 
@@ -19,7 +22,7 @@
                             <legend style="font-size:50px; padding-bottom: 10px;">Payment Entry </legend>
 
                             <select id="name" required>
-                                <option selected disabled>Choose a Patient</option>
+                                <option selected disabled>Select Patient</option>
                                 <option value="name">Stone, Sharon</option>
                             </select>
 
@@ -67,7 +70,8 @@
 
                         <button type="button" id="data-modal-button">See Data</button>
 
-                        <button type="button" class="new-patient">Add New Patient</button>
+                        <a href ng-click="patients = !patients" class="new-patient">Add New Patient</a>
+
 
                     </div>
 
@@ -81,11 +85,16 @@
 
         </div>
 
+    <div ng-hide="!patients" ng-include src="'../components/patient/patientView.html'"></div>
     </main>
+
+   
+
+    <i id="logout" class="fa fa-sign-out" aria-hidden="true">LOGOUT</i>
+
+
 
     <chat-dir></chat-dir>
 
     <graphs-dir></graphs-dir>
 
-</body>
-</body></body></body>

@@ -1,0 +1,485 @@
+.modal-body {
+    width: 100%;
+    padding: 20px;
+    /*background-color: rgba(000,000,000,0.5);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 3;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.new-patient-form {
+    width: 75%;
+    margin: auto;
+    background-color: #062F5C;
+    color: white;
+    padding: 35px;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+    float: left;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.name {
+    width: 75%;
+    margin-top: 20px;
+}
+
+.name:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.name,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.dob {
+    margin-top: 20px;
+}
+
+.dob:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.dob:hover {
+    cursor: pointer;
+}
+
+.dob,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.address {
+    width: 75%;
+    margin-top: 20px;
+}
+
+.address:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.address,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.city {
+    width: 75%;
+    margin-top: 20px;
+}
+
+.city:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.city,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.state {
+    margin-top: 20px;
+}
+
+.state:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.state,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.zip {
+    width: 35%;
+    margin-top: 20px;
+}
+
+.zip:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.zip,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.phone {
+    width: 45%;
+    margin-top: 20px;
+}
+
+.phone:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.phone,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.ssn {
+    width: 25%;
+    margin-top: 20px;
+}
+
+.ssn:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.ssn,
+textarea {
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+
+
+
+.modal-footer {
+    width: 100%;
+    position: fixed;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.modal-backdrop {
+    background-color: white;
+    border-radius: 30px;
+    opacity: 0.8 !important;
+}
+
+.modal-content {
+    border-radius: 30px;
+}
+
+.modal-style {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.order-added {
+    border: none;
+    background-color: green;
+    width: 100%;
+}
+
+.button-div {
+    width: 75%;
+    margin: auto;
+}
+
+.add-continue {
+    background-color: #062F5C;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.add-continue:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+.add-continue:focus {
+    outline: none;
+}
+
+.cancel-button {
+    background-color: #062F5C;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cancel-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    background-color: darkred;
+}
+
+.cancel-button:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Insurance*/
+/*Insurance*/
+/*Insurance*/
+/*Insurance*/
+
+/*.insurance-title {
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.plan-name {
+    width: 45%;
+    margin-top: 20px;
+}
+
+.plan-name:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.plan-name,
+textarea {
+    font-size: 10px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.plan-phone {
+    width: 45%;
+    margin-top: 20px;
+    float: right;
+}
+
+.plan-phone:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.plan-phone,
+textarea {
+    font-size: 10px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.member-id {
+    width: 45%;
+    margin-top: 20px;
+}
+
+.member-id:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.member-id,
+textarea {
+    font-size: 10px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.relat {
+    width: 45%;
+    margin-top: 20px;
+    float: right;
+}
+
+.relat:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.relat,
+textarea {
+    font-size: 10px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.group {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.group:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.group,
+textarea {
+    font-size: 10px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.bin {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.bin:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.bin,
+textarea {
+    font-size: 10px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.pcn {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.pcn:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.pcn,
+textarea {
+    font-size: 10px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}*/

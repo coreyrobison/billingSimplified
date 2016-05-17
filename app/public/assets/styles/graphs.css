@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+    background: #C1BDBA;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.myGrid {
+    width: 500px;
+    height: 250px;
+  }

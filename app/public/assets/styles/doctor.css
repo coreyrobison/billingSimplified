@@ -10,6 +10,16 @@ html {
     box-sizing: inherit;
 }
 
+.curtain {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(000,000,000,0.9);
+    z-index: 2;
+}
+
 
 /*Doctor Homepage*/
 
@@ -372,4 +382,13 @@ textarea {
 
 #data-modal-button:focus {
     outline: none;
+}
+
+#logout {
+    font-family: Titillium Web;
+    font-size: 25px;
+    position: fixed;
+    bottom: 0;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }

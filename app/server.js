@@ -5,10 +5,8 @@ var express = require('express'),
     bodyParser = require('body-parser');
 
 //CONTROLLERS
-var ordersCtrl = require('./controllers/ordersCtrl.js');
-var patientsCtrl = require('./controllers/patientsCtrl.js');
-var prescribersCtrl = require('./controllers/prescribersCtrl.js');
-var drugsCtrl = require('./controllers/drugsCtrl.js');
+var paymentsCtrl = require('./server/controllers/payments.controller.js');
+var patientsCtrl = require('./server/controllers/patients.controller.js');
 
 //EXPRESS
 var app = express();
@@ -24,28 +22,20 @@ mongoose.connection.once('open', function () {
 //MIDDLEWARE
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static('./public'));
+app.use(express.static(__dirname + '/public'));
 
 //Orders Endpoints
-app.get('/api/orders', ordersCtrl.find);
-app.get('/api/orders/:id', ordersCtrl.findById);
-app.get('/api/orders/bypatient/:patientId', ordersCtrl.findByPatientId);
-app.post('/api/orders', ordersCtrl.save);
-app.put('/api/orders/:id', ordersCtrl.update);
+app.get('/api/payments', paymentsCtrl.find);
+app.get('/api/payments/:id', paymentsCtrl.findById);
+app.get('/api/payments/bypatient/:patientId', paymentsCtrl.findByPatientId);
+app.post('/api/payments', paymentsCtrl.save);
+app.put('/api/payments/:id', paymentsCtrl.update);
 
 
 //Patients Endpoints
 app.get('/api/patients', patientsCtrl.find);
 app.get('/api/patients/:id', patientsCtrl.findById);
 app.post('/api/patients', patientsCtrl.save);
-
-//Prescribers Endpoints
-app.get('/api/prescribers', prescribersCtrl.find);
-app.post('/api/prescribers', prescribersCtrl.save);
-
-//Drugs Endpoints
-app.get('/api/drugs', drugsCtrl.find);
-app.post('/api/drugs', drugsCtrl.save);
 
 //LISTEN
 app.listen(8555);
