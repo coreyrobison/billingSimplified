@@ -11,7 +11,7 @@ var newBillSchema = new Schema({
     paid: {type: Boolean, required: true}
 });
 
-module.exports = mongoose.model('payments', newBillSchema);
+module.exports = mongoose.model('Payments', newBillSchema);
 
 //For testing with Postman
 /*

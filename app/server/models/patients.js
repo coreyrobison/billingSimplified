@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var Patient = require('../models/patients');
 var Schema = mongoose.Schema;
 
 var newPatientSchema = new Schema({
@@ -27,7 +28,7 @@ var newPatientSchema = new Schema({
     ]
 });
 
-module.exports = mongoose.model('patients', newPatientSchema);
+module.exports = mongoose.model('Patients', newPatientSchema);
 
 
 

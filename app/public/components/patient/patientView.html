@@ -8,28 +8,28 @@
 
             <div>
                 <h1 class="title">Patient Name: </h1>
-                <input class="name" type="text" placeholder="Last, First" ng-model="patient.name">
+                <input class="name" type="text" placeholder="Last, First" ng-model="newPatient.name">
 
             </div>
 
             <div>
                 <h1 class="title">Date of Birth: </h1>
-                <input class="dob" type="date" ng-model="patient.date_of_birth">
+                <input class="dob" type="date" ng-model="newPatient.date_of_birth">
             </div>
 
             <div>
                 <h1 class="title">Address: </h1>
-                <input class="address" type="text" placeholder="Street Address" ng-model="patient.address.street">
+                <input class="address" type="text" placeholder="Street Address" ng-model="newPatient.address.street">
             </div>
 
             <div>
                 <h1 class="title">City: </h1>
-                <input class="city" type="text" placeholder="City" ng-model="patient.address.city">
+                <input class="city" type="text" placeholder="City" ng-model="newPatient.address.city">
             </div>
 
             <div>
                 <h1 class="title">State: </h1>
-                <select class="state" ng-model="patient.address.state">
+                <select class="state" ng-model="newPatient.address.state">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -86,24 +86,24 @@
 
             <div>
                 <h1 class="title">Zip: </h1>
-                <input class="zip" type="number" placeholder="12345" ng-model="patient.address.zip">
+                <input class="zip" type="number" placeholder="12345" ng-model="newPatient.address.zip">
             </div>
 
             <div>
                 <h1 class="title">Patient Phone: </h1>
-                <input class="phone" type="text" placeholder="(555)555-5555" ng-model="patient.phone">
+                <input class="phone" type="text" placeholder="(555)555-5555" ng-model="newPatient.phone">
             </div>
 
             <div>
                 <h1 class="title">Social Security: </h1>
-                <input class="ssn" type="text" placeholder="123-45-6789" ng-model="patient.social_security">
+                <input class="ssn" type="text" placeholder="123-45-6789" ng-model="newPatient.social_security">
             </div>
 
             <div>&nbsp</div>
 
             <div>
                 <h1 class="title">Notes: </h1>
-                <textarea type="text" class="notes" ng-model="patient.notes"></textarea>
+                <textarea type="text" class="notes" ng-model="newPatient.notes"></textarea>
             </div>
 
         </fieldset>
@@ -156,7 +156,7 @@
     </form>-->
 
         <div class="button-div">
-            <button type="button" ng-click="ok(patient)" class="add-continue">Add Patient</button>
+            <button type="button" ng-click="addPatient(newPatient)" class="add-continue">Add Patient</button>
             <button type="button" ng-click="cancel()" class="cancel-button">Cancel</button>
         </div>
 

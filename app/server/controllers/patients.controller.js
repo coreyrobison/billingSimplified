@@ -22,6 +22,15 @@ module.exports = {
                 }
             });
     },
+    update: function (req, res) {
+        Patient.findByIdAndUpdate(req.params.id, req.body, function(err, result) {
+            if(err) {
+                res.status(500).send(err);
+            } else {
+                res.send(answer);
+            }
+        })
+    },
     save: function (req, res) {
         var newPatient = new Patient(req.body);
         newPatient.save(function (err, answer) {

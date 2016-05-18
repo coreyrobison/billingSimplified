@@ -3,7 +3,7 @@ var Patient = require('../models/patients');
 
 module.exports = {
     find: function (req, res) {
-        Order.find(req.query)
+        Payment.find(req.query)
             .populate('patient prescriber drug')
             .exec(function (err, answer) {
                 if (err) {
@@ -14,7 +14,7 @@ module.exports = {
             });
     },
     findById: function (req, res) {
-        Order.findById(req.params.id)
+        Payment.findById(req.params.id)
             .populate('patient prescriber drug')
             .exec(function (err, answer) {
                 if (err) {
@@ -25,7 +25,7 @@ module.exports = {
             });
     },
     findByPatientId: function (req, res) {
-        Order.find({ patient: { $eq: req.params.patientId } })
+        Payment.find({ patient: { $eq: req.params.patientId } })
             .populate('patient prescriber drug')
             .exec(function (err, answer) {
                 if (err) {
@@ -36,7 +36,7 @@ module.exports = {
             });
     },
     update: function (req, res) {
-        Order.findByIdAndUpdate(req.params.id, req.body)
+        Payment.findByIdAndUpdate(req.params.id, req.body)
             .exec(function (err, answer) {
                 if (err) {
                     res.send(err);
@@ -47,12 +47,28 @@ module.exports = {
     },
     
     save: function (req, res) {
+        console.log(req.body)
         var newPayment = new Payment(req.body);
-        newPayment.save(function(err, answer) {
+        newPayment.save(req.body, function (err, answer) {
             if(err) {
+                console.log(err);
                 res.status(500).send(err);
             } else {
-                res.send(answer);
+                console.log("payment made", answer)
+                Patient.findByIdAndUpdate(req.body.patient, {
+                    $push: {
+                        'payments': answer._id
+                    }
+                },
+                    function(err, patient) {
+                        console.log("done", patient);
+                        if(err) {
+                            res.status(500).send(err);
+                        } else {
+                            res.status(200).send(patient);
+                        }
+                    }
+                )
             }
         });
     }
@@ -71,7 +87,7 @@ module.exports = {
     //                         res.send(error);
     //                     } else {
     //                         req.body.rx_number = updatedRx.rx_number + 1;
-    //                         var newOrders = new Order(req.body);
+    //                         var newPayments = new Order(req.body);
     //                         newOrders.save(function (error, updatedOrder) {
     //                             if (error) {
     //                                 res.send(error);

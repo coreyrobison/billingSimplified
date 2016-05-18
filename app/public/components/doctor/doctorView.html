@@ -1,4 +1,4 @@
-<section class="curtain" ng-show="patients">
+<section class="curtain" ng-show="patient">
 
 </section>
 <main class="container">
@@ -20,9 +20,8 @@
                     <fieldset>
                         <legend style="font-size:50px; padding-bottom: 10px;">Payment Entry </legend>
 
-                        <select id="name" required>
-                                <option selected disabled>Select Patient</option>
-                                <option value="name">Stone, Sharon</option>
+                        <select placeholder="Select Patient" ng-model="myPatients" ng-options="patient as patient.name for patient in patients" id="name" required>
+                                <option value="" disabled>Select Patient</option>
                             </select>
 
                         <input id="payment-amount1" type="number" name="payment-amount" placeholder="Payment Amount" required>
@@ -69,7 +68,7 @@
 
                     <a href ng-click="" id="data-modal-button">See Data</a>
 
-                    <a href ng-click="patients = !patients" id="new-patient">Add New Patient</a>
+                    <a href ng-click="patient = !patient" id="new-patient">Add New Patient</a>
 
 
                 </div>
@@ -84,7 +83,7 @@
 
     </div>
 
-    <div ng-hide="!patients" ng-include src="'../components/patient/patientView.html'"></div>
+    <div ng-hide="!patient" ng-include src="'../components/patient/patientView.html'"></div>
 </main>
 
 

@@ -36,6 +36,7 @@ app.put('/api/payments/:id', paymentsCtrl.update);
 app.get('/api/patients', patientsCtrl.find);
 app.get('/api/patients/:id', patientsCtrl.findById);
 app.post('/api/patients', patientsCtrl.save);
+app.put('/api/patients/:id', patientsCtrl.update);
 
 //LISTEN
 app.listen(8555);
