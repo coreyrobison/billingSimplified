@@ -19,6 +19,12 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'components/billing/billingView.html',
             // controller: 'billingHomepageCtrl'
         })
+        
+        .state('patient', {
+            url: '/patient',
+            templateUrl: 'components/patient/patientView.html',
+            controller: 'patientCtrl'
+        })
 
     $urlRouterProvider.otherwise('/login');
 });

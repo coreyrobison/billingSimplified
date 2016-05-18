@@ -2,32 +2,51 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var newPatientSchema = new Schema({
-    name: { type: String, required: true },
+    name: { type: String },
     address: {
-        street: { type: String, required: true },
-        city: { type: String, required: true },
-        state: { type: String, required: true },
-        zip: {type: Number, required: true }
+        street: { type: String },
+        city: { type: String },
+        state: { type: String },
+        zip: {type: Number }
     },
-    date_of_birth: { type: Date, required: true },
-    social_security: { type: String, required: true },
-    phone: { type: String, required: true },
-    insurance: {
-        plan_name: { type: String },
-        plan_phone: { type: String },
-        member_id: { type: String },
-        relationship: { type: String },
-        group: { type: String },
-        bin: { type: Number },
-        pcn: { type: String }
-    },
-    comments: { type: String },
+    date_of_birth: { type: Date },
+    social_security: { type: String },
+    phone: { type: String },
+    // insurance: {
+    //     plan_name: { type: String },
+    //     plan_phone: { type: String },
+    //     member_id: { type: String },
+    //     relationship: { type: String },
+    //     group: { type: String },
+    //     bin: { type: Number },
+    //     pcn: { type: String }
+    // },
+    // comments: { type: String },
     payments: [
         { type: Schema.Types.ObjectId, ref: 'payments' }
     ]
 });
 
 module.exports = mongoose.model('patients', newPatientSchema);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*FOR TESTING WITH POSTMAN
 {

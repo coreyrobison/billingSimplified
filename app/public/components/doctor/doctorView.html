@@ -1,34 +1,33 @@
+<section class="curtain" ng-show="patients">
 
-    <section class="curtain" ng-show="patients">
-        
-    </section>
-    <main class="container">
-        <header>
+</section>
+<main class="container">
+    <header>
 
-            <div class="logo-bar">
-                <img id="logo" src="assets/images/Billingsimplified logo.png">
-                <p class="practice-name">Jones Family Practice</p>
-            </div>
+        <div class="logo-bar">
+            <img id="logo" src="assets/images/Billingsimplified logo.png">
+            <p class="practice-name">Jones Family Practice</p>
+        </div>
 
-        </header>
+    </header>
 
-        <div class="main-container">
+    <div class="main-container">
 
-            <div class="payment-entry">
-                <form class="payment-data" method="post" action="index.html">
+        <div class="payment-entry">
+            <form class="payment-data" method="post" action="index.html">
 
-                    <div class="input-field">
-                        <fieldset>
-                            <legend style="font-size:50px; padding-bottom: 10px;">Payment Entry </legend>
+                <div class="input-field">
+                    <fieldset>
+                        <legend style="font-size:50px; padding-bottom: 10px;">Payment Entry </legend>
 
-                            <select id="name" required>
+                        <select id="name" required>
                                 <option selected disabled>Select Patient</option>
                                 <option value="name">Stone, Sharon</option>
                             </select>
 
-                            <input id="payment-amount1" type="number" name="payment-amount" placeholder="Payment Amount" required>
+                        <input id="payment-amount1" type="number" name="payment-amount" placeholder="Payment Amount" required>
 
-                            <select class="purpose-selector1" name="purpose" required>
+                        <select class="purpose-selector1" name="purpose" required>
                                 <option selected disabled>Select Purpose</option>
                                 <option value="Copay">Copay</option>
                                 <option value="Deposit">Deposit</option>
@@ -36,9 +35,9 @@
                                 <option value="Other">Other</option>
                             </select>
 
-                            <input id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount">
+                        <input id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount">
 
-                            <select class="purpose-selector2" name="purpose">
+                        <select class="purpose-selector2" name="purpose">
                                 <option selected disabled>Select Purpose</option>
                                 <option value="Copay">Copay</option>
                                 <option value="Deposit">Deposit</option>
@@ -46,9 +45,9 @@
                                 <option value="Other">Other</option>
                             </select>
 
-                            <input id="payment-amount3" type="number" name="payment-amount" placeholder="Payment Amount">
+                        <input id="payment-amount3" type="number" name="payment-amount" placeholder="Payment Amount">
 
-                            <select class="purpose-selector3" name="purpose">
+                        <select class="purpose-selector3" name="purpose">
                                 <option selected disabled>Select Purpose</option>
                                 <option value="Copay">Copay</option>
                                 <option value="Deposit">Deposit</option>
@@ -56,45 +55,51 @@
                                 <option value="Other">Other</option>
                             </select>
 
-                            <input id="payment-total" type="number" name="payment-total" placeholder="Total Payment">
+                        <input id="payment-total" type="number" name="payment-total" placeholder="Total Payment">
 
-                            <input id="payment-method" type="text" name="payment-total" placeholder="Payment Method">
-
-
-
-                            <input id="comments" type="text" name="comments" placeholder="Comments">
-
-                        </fieldset>
-
-                        <a href ng-click="" id="submit-button">Submit</a>
-                        
-                        <a href ng-click="" id="data-modal-button">See Data</a>
-
-                        <a href ng-click="patients = !patients" id="new-patient">Add New Patient</a>
-
-
-                    </div>
-
-                </form>
+                        <input id="payment-method" type="text" name="payment-total" placeholder="Payment Method">
 
 
 
-            </div>
+                        <input id="comments" type="text" name="comments" placeholder="Comments">
+
+                    </fieldset>
+
+                    <a href ng-click="" id="submit-button">Submit</a>
+
+                    <a href ng-click="" id="data-modal-button">See Data</a>
+
+                    <a href ng-click="patients = !patients" id="new-patient">Add New Patient</a>
+
+
+                </div>
+
+            </form>
 
 
 
         </div>
 
+
+
+    </div>
+
     <div ng-hide="!patients" ng-include src="'../components/patient/patientView.html'"></div>
-    </main>
-
-   
-
-    <i id="logout" class="fa fa-sign-out" aria-hidden="true">LOGOUT</i>
+</main>
 
 
+<a ui-sref="login">
+    <div class="logout-containter">
 
-    <chat-dir></chat-dir>
+        <i class="fa fa-sign-out logout fa-2x" aria-hidden="true"></i>
 
-    <graphs-dir></graphs-dir>
+        <ul class="logout-text">LOGOUT</ul>
 
+    </div>
+</a>
+
+
+
+<chat-dir></chat-dir>
+
+<graphs-dir></graphs-dir>

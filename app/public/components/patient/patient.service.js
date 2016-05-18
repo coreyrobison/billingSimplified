@@ -1,13 +1,13 @@
 angular.module("app").service('patientService', function ($http) {
 
-    this.addPatient = function (data) {
+    this.addPatient = function (patient) {
         return $http({
             method: 'POST',
             url: 'http://localhost:8555/api/patients',
             data: data
         })
             .then(function (response) {
-                return response;
+                return response.data;
             });
     };
 

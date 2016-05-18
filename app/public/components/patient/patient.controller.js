@@ -5,7 +5,7 @@ angular.module("app").controller('newPatientCtrl', function ($scope, $state, $mo
         patientService.addPatient(patient).then(function (response) {
             return response;
         });
-        $state.reload('newpatient');
+        $state.reload('patient');
         $modalInstance.close();
     };
     
