@@ -1,4 +1,8 @@
 angular.module("app").controller('doctorCtrl', function ($scope, $state, doctorService, patientService) {
+    
+    $scope.amount1 = 0;
+    $scope.amount2 = 0;
+    $scope.amount3 = 0;
 
     $scope.getPatients = function () {
         patientService.getPatient().then(function (response) {
@@ -22,5 +26,10 @@ angular.module("app").controller('doctorCtrl', function ($scope, $state, doctorS
     $scope.cancel = function () {
         $scope.patient = !$scope.patient;
     };
+
+    //Totals payment function
+    $scope.total = function () {
+        $scope.result = $scope.amount1 + $scope.amount2 + $scope.amount3;
+    }
 
 });

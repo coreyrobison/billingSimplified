@@ -96,7 +96,7 @@ textarea {
 #payment-amount1 {
     width: 45%;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #payment-amount1:focus {
@@ -120,7 +120,7 @@ textarea {
 #payment-amount2 {
     width: 45%;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #payment-amount2:focus {
@@ -144,7 +144,7 @@ textarea {
 #payment-amount3 {
     width: 45%;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #payment-amount3:focus {
@@ -168,19 +168,19 @@ textarea {
 .purpose-selector1 {
     width: 45%;
     float: right;
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
 .purpose-selector2 {
     width: 45%;
     float: right;
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
 .purpose-selector3 {
     width: 45%;
     float: right;
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
 .purpose-selector1:focus {
@@ -252,7 +252,7 @@ textarea {
 #payment-total {
     width: 45%;
     float: left;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #payment-total:focus {

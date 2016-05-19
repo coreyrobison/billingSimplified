@@ -4,7 +4,7 @@ var Patient = require('../models/patients');
 module.exports = {
     find: function (req, res) {
         Payment.find(req.query)
-            .populate('patient prescriber drug')
+            .populate('patient payment')
             .exec(function (err, answer) {
                 if (err) {
                     res.send(err);
@@ -15,7 +15,7 @@ module.exports = {
     },
     findById: function (req, res) {
         Payment.findById(req.params.id)
-            .populate('patient prescriber drug')
+            .populate('patient payment')
             .exec(function (err, answer) {
                 if (err) {
                     res.send(err);
@@ -26,7 +26,7 @@ module.exports = {
     },
     findByPatientId: function (req, res) {
         Payment.find({ patient: { $eq: req.params.patientId } })
-            .populate('patient prescriber drug')
+            .populate('patient payment')
             .exec(function (err, answer) {
                 if (err) {
                     res.send(err);
@@ -45,12 +45,12 @@ module.exports = {
                 }
             });
     },
-    
+
     save: function (req, res) {
         console.log(req.body)
         var newPayment = new Payment(req.body);
         newPayment.save(req.body, function (err, answer) {
-            if(err) {
+            if (err) {
                 console.log(err);
                 res.status(500).send(err);
             } else {
@@ -60,9 +60,9 @@ module.exports = {
                         'payments': answer._id
                     }
                 },
-                    function(err, patient) {
+                    function (err, patient) {
                         console.log("done", patient);
-                        if(err) {
+                        if (err) {
                             res.status(500).send(err);
                         } else {
                             res.status(200).send(patient);
@@ -72,71 +72,4 @@ module.exports = {
             }
         });
     }
-    
-    
-    
-    
-    // save: function (req, res) {
-    //     RxNumber.findOne()
-    //         .exec(function (err, answer) {
-    //             if (answer) {
-    //                 var answerId = answer._id;
-    //                 var answerPlusOne = answer.rx_number + 1;
-    //                 RxNumber.findByIdAndUpdate({ _id: answerId }, { rx_number: answerPlusOne }, function (error, updatedRx) {
-    //                     if (error) {
-    //                         res.send(error);
-    //                     } else {
-    //                         req.body.rx_number = updatedRx.rx_number + 1;
-    //                         var newPayments = new Order(req.body);
-    //                         newOrders.save(function (error, updatedOrder) {
-    //                             if (error) {
-    //                                 res.send(error);
-    //                             } else {
-    //                                 var patientId = updatedOrder.patient;
-    //                                 Patient.findById(patientId, function (err1, patient) {
-    //                                     if (err1) {
-    //                                         res.send(err1);
-    //                                     } else {
-    //                                         var patientOrders = patient.orders;
-    //                                         patientOrders.push(updatedOrder._id);
-    //                                         var patientOrdersUpdated = {
-    //                                             orders: patientOrders
-    //                                         };
-    //                                         Patient.findByIdAndUpdate(patient._id, patientOrdersUpdated)
-    //                                             .exec(function (error1, answer1) {
-    //                                                 if (error1) {
-    //                                                     res.send(error1);
-    //                                                 } else {
-    //                                                     res.send(answer1);
-    //                                                 }
-    //                                             });
-    //                                     }
-    //                                 });
-    //                             }
-    //                         });
-    //                     }
-    //                 });
-    //             } else {
-    //                 var newRxNumObj = {
-    //                     rx_number: 1000
-    //                 };
-    //                 var addNewRx = new RxNumber(newRxNumObj);
-    //                 addNewRx.save(function (error, newRxNumber) {
-    //                     if (error) {
-    //                         res.send(error);
-    //                     } else {
-    //                         req.body.rx_number = 1000;
-    //                         var newOrder = new Order(req.body);
-    //                         newOrder.save(function (error, updatedOrder) {
-    //                             if (err) {
-    //                                 res.send(error);
-    //                             } else {
-    //                                 res.send(updatedOrder);
-    //                             }
-    //                         });
-    //                         res.send(newRxNumber);
-    //                     }
-    //                 });
-    //             }
-    //         });
-    };
+};

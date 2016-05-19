@@ -8,7 +8,7 @@ var newPatientSchema = new Schema({
         street: { type: String },
         city: { type: String },
         state: { type: String },
-        zip: {type: Number }
+        zip: { type: Number }
     },
     date_of_birth: { type: Date },
     social_security: { type: String },

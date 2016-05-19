@@ -22,6 +22,7 @@ module.exports = mongoose.model('Payments', newBillSchema);
     "invoice_number": 5,
     "patient_notes": "Test",
     "typed_by": "Ryan",
-    "payment_method": "check"
+    "payment_method": "check",
+    paid: true
 }
 */

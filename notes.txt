@@ -1,3 +1,40 @@
+angular.module("app").controller('doctorCtrl', function ($scope, $state, doctorService, patientService) {
+
+    $scope.amount1 = 0;
+    $scope.amount2 = 0;
+    $scope.amount3 = 0;
+
+    $scope.getPatients = function () {
+        patientService.getPatient().then(function (response) {
+            $scope.patients = response;
+            console.log(response);
+        })
+    }
+    $scope.getPatients();
+
+    //When user clicks submit will add new patient to collection
+    $scope.addPatient = function (newPatient) {
+        patientService.addPatient(newPatient).then(function (response) {
+            console.log(response);
+            $scope.getPatients();
+        });
+        $state.reload('patient');
+        $scope.patient = !$scope.patient;
+    };
+
+    //User can cancel adding a new patient
+    $scope.cancel = function () {
+        $scope.patient = !$scope.patient;
+    };
+
+    //Totals payment function
+    $scope.total = function () {
+        $scope.result = $scope.amount1 + $scope.amount2 + $scope.amount3;
+    }
+
+});
+
+
 <section class="curtain" ng-show="patient">
 
 </section>
@@ -34,7 +71,7 @@
                                 <option value="Other">Other</option>
                             </select>
 
-                        <input ng-model="amount2" ng-blur="total()" id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount">
+                        <input ng-model="amount2" id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount">
 
                         <select class="purpose-selector2" name="purpose">
                                 <option selected disabled>Select Purpose</option>
@@ -44,7 +81,7 @@
                                 <option value="Other">Other</option>
                             </select>
 
-                        <input ng-model="amount3" ng-blur="total()" id="payment-amount3" type="number" name="payment-amount" placeholder="Payment Amount">
+                        <input ng-model="amount3" id="payment-amount3" type="number" name="payment-amount" placeholder="Payment Amount">
 
                         <select class="purpose-selector3" name="purpose">
                                 <option selected disabled>Select Purpose</option>
@@ -56,7 +93,7 @@
 
                         <input ng-model="result" id="payment-total" type="number" name="payment-total" placeholder="Total Payment">
 
-                        <input id="payment-method" type="text"  placeholder="Payment Method">
+                        <input id="payment-method" type="text" name="payment-total" placeholder="Payment Method">
 
 
 
