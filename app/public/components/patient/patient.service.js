@@ -10,16 +10,16 @@ angular.module("app").service('patientService', function ($http) {
                 street: newPatient.street,
                 city: newPatient.city,
                 state: newPatient.state,
-                zip: newPatient.zip
-            },
-            date_of_birth: newPatient.date_of_birth,
-            social_security: newPatient.social_security,
-            phone: newPatient.phone,
-            payments: newPatient.payments
+                zip: newPatient.zip,
+                date_of_birth: newPatient.date_of_birth,
+                social_security: newPatient.social_security,
+                phone: newPatient.phone,
+                payments: newPatient.payments
+            }
         })
-        .then(function(response) {
-            console.log(response);
-        })
+            .then(function (response) {
+                console.log(response);
+            })
     };
 
     this.getPatient = function () {

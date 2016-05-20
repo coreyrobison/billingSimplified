@@ -66,9 +66,57 @@ html {
     width: 100%;
 }
 
+.payment-date,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid black;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.payment-date {
+    width: 45%;
+    float: left;
+}
+
+.due-date,
+textarea {
+  font-size: 22px;
+  display: block;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid black;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.due-date {
+    width: 45%;
+    float: right;
+}
+
+#payment-amount3 {
+    width: 45%;
+    float: left;
+    margin-top: 10px;
+}
+
+#payment-amount3:focus {
+    outline: none;
+    border:1px solid white;
+}
+
 #name {
     width: 100%;
     float: left;
+    margin-top: 10px;
 }
 
 #name:hover {
@@ -407,4 +455,11 @@ textarea {
     cursor: pointer;
 }
 
+/*GRID*/
+/*GRID*/
+/*GRID*/
+/*GRID*/
 
+#myGrid {
+    width: 75%;
+}

@@ -4,7 +4,7 @@ var Patient = require('../models/patients');
 module.exports = {
     find: function (req, res) {
         Payment.find(req.query)
-            .populate('patient payment')
+            .populate('Patients')
             .exec(function (err, answer) {
                 if (err) {
                     res.send(err);
@@ -15,7 +15,7 @@ module.exports = {
     },
     findById: function (req, res) {
         Payment.findById(req.params.id)
-            .populate('patient payment')
+            .populate('Patients')
             .exec(function (err, answer) {
                 if (err) {
                     res.send(err);
@@ -26,7 +26,7 @@ module.exports = {
     },
     findByPatientId: function (req, res) {
         Payment.find({ patient: { $eq: req.params.patientId } })
-            .populate('patient payment')
+            .populate('Patients')
             .exec(function (err, answer) {
                 if (err) {
                     res.send(err);

@@ -19,6 +19,10 @@
                 <div class="input-field">
                     <fieldset>
                         <legend style="font-size:50px; padding-bottom: 10px;">Payment Entry </legend>
+                        
+                        <input value="payment-date" class="payment-date" type="date" ng-model="newPayment.date_charged">
+                        
+                        <input for="due-date" class="due-date" type="date" ng-model="newPayment.due_by">
 
                         <select placeholder="Select Patient" ng-model="myPatients" ng-options="patient as patient.name for patient in patients" id="name" required>
                                 <option value="" disabled>Select Patient</option>
@@ -34,7 +38,7 @@
                                 <option value="Other">Other</option>
                             </select>
 
-                        <input ng-model="amount2" ng-blur="total()" id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount">
+                        <input ng-model="amount2" ng-blur="total(); test()"  id="payment-amount2" type="number" name="payment-amount" placeholder="Payment Amount">
 
                         <select class="purpose-selector2" name="purpose">
                                 <option selected disabled>Select Purpose</option>
@@ -56,19 +60,21 @@
 
                         <input ng-model="result" id="payment-total" type="number" name="payment-total" placeholder="Total Payment">
 
-                        <input id="payment-method" type="text"  placeholder="Payment Method">
+                        <input ng-model="newPayment.payment_method" id="payment-method" type="text" placeholder="Payment Method">
 
 
 
-                        <input id="comments" type="text" name="comments" placeholder="Comments">
+                        <input ng-model="newPayment.patient_notes" id="comments" type="text" name="comments" placeholder="Comments">
 
                     </fieldset>
-
-                    <a href ng-click="" id="submit-button">Submit</a>
+                    
+                    <a href ng-click="addPayment(newPayment)" id="submit-button">Submit</a>
 
                     <a href ng-click="" id="data-modal-button">See Data</a>
 
                     <a href ng-click="patient = !patient" id="new-patient">Add New Patient</a>
+
+
 
 
                 </div>
@@ -77,13 +83,18 @@
 
 
 
+
         </div>
+
 
 
 
     </div>
 
     <div ng-hide="!patient" ng-include src="'../components/patient/patientView.html'"></div>
+
+        <center><div ui-grid="{ data: myData }" id="myGrid"></div></center>
+    
 </main>
 
 
@@ -96,6 +107,7 @@
 
     </div>
 </a>
+
 
 
 

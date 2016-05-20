@@ -3,12 +3,13 @@ var mongoose = require('mongoose'),
 
 
 var newBillSchema = new Schema({
-    patient: { type: Schema.Types.ObjectId, ref: 'patients', required: true },
-    date_charged: { type: Date, required: true, default: Date.now},
-    due_by: { type: Date, required: true },
+    payment_amount: {type: Number},
+    patient: { type: Schema.Types.ObjectId, ref: 'patient'},
+    date_charged: { type: Date, default: Date.now},
+    due_by: { type: Date},
     patient_notes: { type: String, maxlength: 300 },
-    payment_method: { type: String, required: true},
-    paid: {type: Boolean, required: true}
+    payment_method: { type: String},
+    paid: {type: Boolean}
 });
 
 module.exports = mongoose.model('Payments', newBillSchema);
