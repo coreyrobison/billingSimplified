@@ -74,25 +74,15 @@
 
                     <a href ng-click="patient = !patient" id="new-patient">Add New Patient</a>
 
-
-
-
                 </div>
 
             </form>
 
-
-
-
         </div>
-
-
-
 
     </div>
 
     <div ng-hide="!patient" ng-include src="'../components/patient/patientView.html'"></div>
-
 
     <center>
         <div class="grid-container">
@@ -100,21 +90,18 @@
         </div>
     </center>
 
+</main>
 
+<a ui-sref="login">
+    <div class="logout-containter">
 
-    <a ui-sref="login">
-        <div class="logout-containter">
+        <i class="fa fa-sign-out logout fa-2x" aria-hidden="true"></i>
 
-            <i class="fa fa-sign-out logout fa-2x" aria-hidden="true"></i>
+        <ul class="logout-text">LOGOUT</ul>
 
-            <ul class="logout-text">LOGOUT</ul>
+    </div>
+</a>
 
-        </div>
-    </a>
+<chat-dir></chat-dir>
 
-
-
-
-    <chat-dir></chat-dir>
-
-    <graphs-dir></graphs-dir>
+<graphs-dir></graphs-dir>

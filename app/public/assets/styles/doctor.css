@@ -34,6 +34,8 @@ html {
 
 .logo-bar {
     background-color: gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #logo {
@@ -51,7 +53,7 @@ html {
 
 .main-container {
     display: flex;
-    padding: 50px;
+    padding: 30px 50px 30px 50px;
     justify-content: space-around;
 }
 
