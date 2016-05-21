@@ -54,14 +54,10 @@ angular.module("app").controller('doctorCtrl', function ($scope, $state, doctorS
         doctorService.getPayment().then(function (response) {
             console.log(response);
             $scope.payments = response;
-            $scope.myData = $scope.payments;
         })
     }
     
     $scope.getPayments();
-
-
-
 
 });
 

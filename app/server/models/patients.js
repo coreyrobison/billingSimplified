@@ -24,7 +24,7 @@ var newPatientSchema = new Schema({
     // },
     // comments: { type: String },
     payments: [
-        { type: Schema.Types.ObjectId, ref: 'payments' }
+        { type: Schema.Types.ObjectId, ref: 'Payments' }
     ]
 });
 

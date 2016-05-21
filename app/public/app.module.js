@@ -1,4 +1,3 @@
 angular.module('app', [
-        'ui.router',
-        'ui.grid'
+        'ui.router'
     ]);

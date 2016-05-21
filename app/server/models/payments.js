@@ -4,9 +4,9 @@ var mongoose = require('mongoose'),
 
 var newBillSchema = new Schema({
     payment_amount: {type: Number},
-    patient: { type: Schema.Types.ObjectId, ref: 'patient'},
-    date_charged: { type: Date, default: Date.now},
-    due_by: { type: Date},
+    patient: { type: Schema.Types.ObjectId, ref: 'Patients'},
+    date_charged: { type: Date },
+    due_by: { type: Date },
     patient_notes: { type: String, maxlength: 300 },
     payment_method: { type: String},
     paid: {type: Boolean}

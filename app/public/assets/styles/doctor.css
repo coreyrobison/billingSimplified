@@ -16,7 +16,7 @@ html {
     right: 0;
     bottom: 0;
     top: 0;
-    background-color: rgba(000,000,000,0.5);
+    background-color: rgba(000, 000, 000, 0.5);
     z-index: 2;
 }
 
@@ -68,15 +68,15 @@ html {
 
 .payment-date,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 .payment-date {
@@ -86,15 +86,15 @@ textarea {
 
 .due-date,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 .due-date {
@@ -110,7 +110,7 @@ textarea {
 
 #payment-amount3:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 #name {
@@ -125,20 +125,20 @@ textarea {
 
 #name:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 #name,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: black;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 #payment-amount1 {
@@ -149,20 +149,20 @@ textarea {
 
 #payment-amount1:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 #payment-amount1,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 #payment-amount2 {
@@ -173,20 +173,20 @@ textarea {
 
 #payment-amount2:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 #payment-amount2,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 #payment-amount3 {
@@ -197,20 +197,20 @@ textarea {
 
 #payment-amount3:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 #payment-amount3,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 .purpose-selector1 {
@@ -233,17 +233,17 @@ textarea {
 
 .purpose-selector1:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 .purpose-selector2:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 .purpose-selector3:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 .purpose-selector1:hover {
@@ -260,41 +260,41 @@ textarea {
 
 .purpose-selector1,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: black;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 .purpose-selector2,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: black;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 .purpose-selector3,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: black;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 #payment-total {
@@ -305,21 +305,20 @@ textarea {
 
 #payment-total:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
-
 
 #payment-total,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: white;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 #payment-method {
@@ -330,20 +329,20 @@ textarea {
 
 #payment-method:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 #payment-method,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: white;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 #comments {
@@ -354,20 +353,20 @@ textarea {
 
 #comments:focus {
     outline: none;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 #comments,
 textarea {
-  font-size: 22px;
-  display: block;
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid black;
-  color: white;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+    font-size: 22px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 #submit-button {
@@ -383,7 +382,7 @@ textarea {
 }
 
 #submit-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 
@@ -404,7 +403,7 @@ textarea {
 }
 
 #new-patient:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 
@@ -425,8 +424,8 @@ textarea {
 }
 
 #data-modal-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 #data-modal-button:focus {
@@ -455,11 +454,120 @@ textarea {
     cursor: pointer;
 }
 
-/*GRID*/
-/*GRID*/
-/*GRID*/
-/*GRID*/
 
-#myGrid {
-    width: 75%;
+/*data table*/
+
+
+/*data table*/
+
+
+/*data table*/
+
+
+/*data table*/
+
+.grid-container {
+    width: 100%;
+    padding: 0px 50px 35px 50px;
+}
+
+.tg {
+    width: 100%;
+    padding: 50px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #ccc;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #ccc;
+    color: #333;
+    background-color: #fff;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #ccc;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.tg .tg-qcjy {
+    font-size: 22px;
+    vertical-align: top
+}
+
+.tg .tg-b7b8 {
+    background-color: #f9f9f9;
+    vertical-align: top
+}
+
+.tg .tg-yw4l {
+    vertical-align: top
+}
+
+th.tg-sort-header::-moz-selection {
+    background: transparent;
+}
+
+th.tg-sort-header::selection {
+    background: transparent;
+}
+
+th.tg-sort-header {
+    cursor: pointer;
+}
+
+table th.tg-sort-header:after {
+    content: '';
+    float: right;
+    margin-top: 7px;
+    border-width: 0 4px 4px;
+    border-style: solid;
+    border-color: #404040 transparent;
+    visibility: hidden;
+}
+
+table th.tg-sort-header:hover:after {
+    visibility: visible;
+}
+
+table th.tg-sort-desc:after,
+table th.tg-sort-asc:after,
+table th.tg-sort-asc:hover:after {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+table th.tg-sort-desc:after {
+    border-bottom: none;
+    border-width: 4px 4px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+    .tg col {
+        width: auto !important;
+    }
+    .tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: auto 0px;
+    }
 }

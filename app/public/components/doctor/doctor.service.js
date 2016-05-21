@@ -8,7 +8,7 @@ angular.module("app").service("doctorService", function ($http) {
             data: {
                 payment_amount: newPayment.payment_amount,
                 patient: newPayment.patient,
-                date_charged: new Date(),
+                date_charged: newPayment.date_charged,
                 due_by: newPayment.due_by,
                 patient_notes: newPayment.patient_notes,
                 payment_method: newPayment.payment_method,
