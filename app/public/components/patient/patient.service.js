@@ -41,6 +41,18 @@ angular.module("app").service('patientService', function ($http) {
                 return response.data;
             });
     };
+    
+    // this.deletePatient = function() {
+    //     return $http({
+    //         method: 'DELETE',
+    //         url: 'api/patients/' + id
+    //     })
+    //     .then(function(response) {
+            
+    //     })
+    // }
+    
+    
     // this.updatePatient = function (id, data) {
     //     return $http({
     //         method: 'PUT',

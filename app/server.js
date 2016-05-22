@@ -37,6 +37,7 @@ app.get('/api/patients', patientsCtrl.find);
 app.get('/api/patients/:id', patientsCtrl.findById);
 app.post('/api/patients', patientsCtrl.save);
 app.put('/api/patients/:id', patientsCtrl.update);
+// app.delete('/api/patients/:id', patientCtrl.delete);
 
 //LISTEN
 app.listen(8555);
