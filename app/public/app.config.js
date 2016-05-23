@@ -22,8 +22,14 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
         
         .state('patient', {
             url: '/patient',
-            templateUrl: 'components/patient/patientView.html',
+            templateUrl: 'components/newPatient/patientView.html',
             controller: 'patientCtrl'
+        })
+        
+        .state('patientProfile', {
+            url: '/patientProfile',
+            templateUrl: 'components/patientProfile/patientProfileView.html',
+            controller: 'patientProfileCtrl'
         })
 
     $urlRouterProvider.otherwise('/login');

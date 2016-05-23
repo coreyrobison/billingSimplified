@@ -23,8 +23,8 @@ module.exports = {
             });
     },
     update: function (req, res) {
-        Patient.findByIdAndUpdate(req.params.id, req.body, function(err, result) {
-            if(err) {
+        Patient.findByIdAndUpdate(req.params.id, req.body, function (err, result) {
+            if (err) {
                 res.status(500).send(err);
             } else {
                 res.send(answer);
@@ -40,8 +40,10 @@ module.exports = {
                 res.send(answer);
             }
         });
+    },
+    delete: function (req, res) {
+        Patient.findByIdAndRemove(req.params.id, function (err, answer) {
+            return res.send("Success");
+        });
     }
-    // destroy: function (req, res) {
-    //     var 
-    // }
 };

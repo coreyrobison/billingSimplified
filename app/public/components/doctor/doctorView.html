@@ -20,8 +20,10 @@
                     <fieldset>
                         <legend style="font-size:50px; padding-bottom: 10px;">Payment Entry </legend>
 
+                        <legend>Date Charged:</legend>
                         <input value="payment-date" class="payment-date" type="date" ng-model="newPayment.date_charged">
 
+                        <!--<legend style="">Date Due:</legend>-->
                         <input for="due-date" class="due-date" type="date" ng-model="newPayment.due_by">
 
                         <select placeholder="Select Patient" ng-model="newPayment.patient" ng-options="patient as patient.name for patient in patients" data-type="search" id="name" required>
@@ -62,15 +64,15 @@
 
                         <input ng-model="newPayment.payment_method" id="payment-method" type="text" placeholder="Payment Method">
 
-
-
                         <input ng-model="newPayment.patient_notes" id="comments" type="text" name="comments" placeholder="Comments">
 
                     </fieldset>
 
-                    <a href ng-click="addPayment(newPayment)" id="submit-button">Submit</a>
+                    <a href ng-click="addPayment(newPayment)" id="submit-button">Submit New Payment</a>
 
-                    <a href ng-click="" id="data-modal-button">See Data</a>
+                    <a href ng-click="" id="data-modal-button">See Billing Data</a>
+                    
+                    <a ui-sref="patientProfile"  id="patient-profile-button">View All Patients</a>
 
                     <a href ng-click="patient = !patient" id="new-patient">Add New Patient</a>
 
@@ -82,7 +84,7 @@
 
     </div>
 
-    <div ng-hide="!patient" ng-include src="'../components/patient/patientView.html'"></div>
+    <div ng-hide="!patient" ng-include src="'../components/newPatient/patientView.html'"></div>
 
     <center>
         <div class="grid-container">

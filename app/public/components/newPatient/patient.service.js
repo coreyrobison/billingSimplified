@@ -25,7 +25,7 @@ angular.module("app").service('patientService', function ($http) {
     this.getPatient = function () {
         return $http({
             method: 'GET',
-            url: 'api/patients'
+            url: '/api/patients'
         })
             .then(function (response) {
                 return response.data;
@@ -35,7 +35,7 @@ angular.module("app").service('patientService', function ($http) {
     this.getPatientById = function (id) {
         return $http({
             method: 'GET',
-            url: 'api/patients/' + id
+            url: '/api/patients/' + id
         })
             .then(function (response) {
                 return response.data;

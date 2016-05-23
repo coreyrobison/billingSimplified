@@ -434,6 +434,27 @@ textarea {
     outline: none;
 }
 
+#patient-profile-button {
+    background-color: #062F5C;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#patient-profile-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+#patient-profile-button:focus {
+    outline: none;
+}
+
 .logout {
     position: fixed;
     bottom: 0;
@@ -449,23 +470,17 @@ textarea {
     margin-left: 50px;
     margin-bottom: 20px;
     color: white;
-}
+}   
 
-.logout-containter:hover {
+.logout-container:hover {
     color: darkred;
     cursor: pointer;
 }
 
 
 /*data table*/
-
-
 /*data table*/
-
-
 /*data table*/
-
-
 /*data table*/
 
 .grid-container {
