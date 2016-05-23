@@ -42,6 +42,7 @@ module.exports = {
         });
     },
     delete: function (req, res) {
+        console.log("delete function here!")
         Patient.findByIdAndRemove(req.params.id, function (err, answer) {
             return res.send("Success");
         });

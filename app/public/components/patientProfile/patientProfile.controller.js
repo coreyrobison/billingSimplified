@@ -5,14 +5,26 @@ angular.module("app").controller('patientProfileCtrl', function ($scope, patient
             console.log(response);
         });
     } ());
-    
-    var getPatients = function() {
-        patientService.getPatient();
-    } 
+
+    var getPatients = function () {
+        patientService.getPatient().then(function (response) {
+            $scope.patients = response;
+        })
+    }
     getPatients();
 
     $scope.patientProfile = function (patient) {
         console.log(patient._id);
         $scope.patientId = patient._id;
     };
+
+    $scope.deletePatient = function (patient) {
+        console.log('delete patientprofile controller hit', patient)
+        patientService.deletePatient(patient).then(function (response) {
+            getPatients();
+        })
+    }
+
+    getPatients();
+
 });

@@ -75,8 +75,7 @@ textarea {
     padding: 5px 10px;
     background: none;
     border: 1px solid black;
-    color: #ffffff;
-    border-radius: 0;
+    color: black;
     -webkit-transition: border-color .25s ease, box-shadow .25s ease;
     transition: border-color .25s ease, box-shadow .25s ease;
 }
@@ -84,6 +83,7 @@ textarea {
 .payment-date {
     width: 45%;
     float: left;
+    border-radius: 2px;
 }
 
 .due-date,
@@ -93,8 +93,7 @@ textarea {
     padding: 5px 10px;
     background: none;
     border: 1px solid black;
-    color: #ffffff;
-    border-radius: 0;
+    color: black;
     -webkit-transition: border-color .25s ease, box-shadow .25s ease;
     transition: border-color .25s ease, box-shadow .25s ease;
 }
@@ -102,6 +101,16 @@ textarea {
 .due-date {
     width: 45%;
     float: right;
+    border-radius: 2px;
+}
+
+.due-date:hover {
+    cursor: pointer;
+}
+
+.due-date:focus {
+    outline: none;
+    border: 1px solid white;
 }
 
 #payment-amount3 {
@@ -375,6 +384,7 @@ textarea {
     background-color: #062F5C;
     margin-top: 20px;
     border: none;
+    border-radius: 2px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -396,6 +406,7 @@ textarea {
     background-color: #062F5C;
     margin-top: 20px;
     border: none;
+    border-radius: 2px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -417,6 +428,7 @@ textarea {
     background-color: #062F5C;
     margin-top: 20px;
     border: none;
+    border-radius: 2px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -438,6 +450,7 @@ textarea {
     background-color: #062F5C;
     margin-top: 20px;
     border: none;
+    border-radius: 2px;
     color: white;
     padding: 15px 32px;
     text-align: center;

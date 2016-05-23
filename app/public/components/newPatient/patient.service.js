@@ -42,15 +42,16 @@ angular.module("app").service('patientService', function ($http) {
             });
     };
     
-    // this.deletePatient = function() {
-    //     return $http({
-    //         method: 'DELETE',
-    //         url: 'api/patients/' + id
-    //     })
-    //     .then(function(response) {
-            
-    //     })
-    // }
+    this.deletePatient = function(patient) {
+        console.log("delete service hit");
+        return $http({
+            method: 'DELETE',
+            url: 'api/patients/' + patient._id
+        })
+        .then(function(response) {
+            return response.data;
+        })
+    }
     
     
     // this.updatePatient = function (id, data) {
