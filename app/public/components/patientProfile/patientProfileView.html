@@ -6,19 +6,32 @@
 
     <link rel="stylesheet" href="assets/styles/patientProfile.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 </head>
 
 <body>
 
+
+
     <div class="card-container">
-
-
-        <h1 style="font-size:75px; text-align:center">Jones Family Practice Patients</h1>
         
-            <a ui-sref="doctor" id="back-button">Go Back</a>
+          <h1 style="font-size:75px; text-align:center">Jones Family Practice Patients</h1>
+        
+<div id="search-container">
+  <form action="" id="Search">
+    <input id="Search-box" type="search" class="Search-box" autocomplete="off">
+    <label id="Search-label" for="Search-box"><i class="material-icons">search</i></label>
+  </form>
+</div>
+
+
+      
+
+        <a ui-sref="doctor" id="back-button">Go Back</a>
 
         <div class="row">
             <div ng-repeat="patient in patients" class="col s12 m6 l3">
@@ -49,11 +62,14 @@
                     </div>
                     <div class="card-action">
                         <a href="#">EDIT</a>
-                        <a ng-click="deletePatient(patient)">DELETE</a>
+                        <a href ng-click="deletePatient(patient)">DELETE</a>
                     </div>
+
                 </div>
             </div>
         </div>
+
+
 
     </div>
 

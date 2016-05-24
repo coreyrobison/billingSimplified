@@ -1,5 +1,77 @@
+/* border-box */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+input[type="search"] {
+    box-sizing: border-box;
+}
+
+#search-container {
+    width: 500px;
+    margin: 50px auto;
+}
+
+
+/**
+ * The search field needs to be a little smaller than its container but when
+ * focused it needs to grow to the whole width of its container.
+ *
+ * I wanted the icon to be specified in the html instead of a background so
+ * I could use fontawesome.
+ *
+ * I use flexbox so that the search box grows to the whole width of its
+ * container (minus the margins when it's not focused).
+ *
+ * When the search box is focused the icon moves horizontally the width of the
+ * margin. To be able to target the label I used the adjacent sibling selector.
+ *
+ */
+
+#Search {
+    position: relative;
+    display: flex;
+    font-weight: 300;
+    font-size: 40px;
+    color: #555;
+}
+
+#Search-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    box-shadow: 0 3px 12px -1px rgba(0, 0, 0, .3);
+    transition: all .15s ease-in-out;
+    background: antiquewhite;
+}
+
+#Search-box:focus {
+    flex: 1 0 90%;
+    margin: 0;
+    outline: 0;
+}
+
+#Search-label {
+    position: absolute;
+    top: 14px;
+    right: 30px;
+    font-size: 40px;
+    transition: all .15s ease-in-out;
+}
+
+#Search-box:focus + #Search-label {
+    transform: translateX(12px);
+}
+
 .row .col.l3 {
-   height: 400px;
+    height: 400px;
 }
 
 #back-button {

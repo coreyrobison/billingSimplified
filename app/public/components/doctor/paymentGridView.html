@@ -8,7 +8,7 @@
             <th class="tg-qcjy">Comments</th>
             <th class="tg-qcjy">Paid</th>
         </tr>
-        <tr ng-repeat="x in payments | filter:{patient:newPayment.patient._id} | orderBy:'payment_amount'">
+        <tr ng-repeat="x in payments | filter:{patient:newPayment.patient._id} | orderBy:'date_charged'">
             <td class="tg-b7b8">{{ x.date_charged | date }}</td>
             <td class="tg-yw4l">{{ x.due_by | date }}</td>
             <td class="tg-b7b8">{{ x.payment_amount | currency }}</td>
