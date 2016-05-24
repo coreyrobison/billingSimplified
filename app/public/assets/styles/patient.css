@@ -209,6 +209,18 @@ textarea {
     transition: border-color .25s ease, box-shadow .25s ease;
 }
 
+.notes {
+    font-size: 15px;
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    color: black;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
 .button-div {
     width: 75%;
     margin: auto;
