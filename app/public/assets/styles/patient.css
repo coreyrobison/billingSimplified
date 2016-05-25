@@ -209,7 +209,8 @@ textarea {
     transition: border-color .25s ease, box-shadow .25s ease;
 }
 
-.notes {
+#notes,
+textarea {
     font-size: 15px;
     display: block;
     padding: 5px 10px;
@@ -271,28 +272,17 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Insurance*/
 
 
 /*Insurance*/
+
+
 /*Insurance*/
+
+
 /*Insurance*/
-/*Insurance*/
+
 
 /*.insurance-title {
     font-size: 15px;

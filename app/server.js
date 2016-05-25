@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
-//Orders Endpoints
+//Payments Endpoints
 app.get('/api/payments', paymentsCtrl.find);
 app.get('/api/payments/:id', paymentsCtrl.findById);
 app.get('/api/payments/bypatient/:patientId', paymentsCtrl.findByPatientId);
@@ -39,5 +39,7 @@ app.post('/api/patients', patientsCtrl.save);
 app.put('/api/patients/:id', patientsCtrl.update);
 app.delete('/api/patients/:id', patientsCtrl.delete);
 
-//LISTEN
-app.listen(8555);
+
+app.listen(8000, function(){
+    console.log("working on port 8000")
+});

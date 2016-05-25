@@ -17,7 +17,7 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
         .state('billing', {
             url: '/billing',
             templateUrl: 'components/billing/billingView.html',
-            // controller: 'billingHomepageCtrl'
+            controller: 'billingCtrl'
         })
         
         .state('patient', {
